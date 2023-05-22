@@ -5,6 +5,7 @@ import './App.css';
 import AuthPage from '../AuthPage/AuthPage';
 import NewOrderPage from '../NewOrderPage/NewOrderPage';
 import OrderHistoryPage from '../OrderHistoryPage/OrderHistoryPage';
+import Dashboard from '../Dashboard/Dashboard';
 import NavBar from '../../components/NavBar/NavBar';
 
 export default function App() {
@@ -18,7 +19,8 @@ export default function App() {
             <Routes>
               {/* Route components in here */}
               <Route path="/orders/new" element={<NewOrderPage />} />
-              <Route path="/orders" element={<OrderHistoryPage />} />
+              {/* <Route path="/orders" element={<OrderHistoryPage />} /> */}
+              <Route path='/dashboard' element={<Dashboard user={user}/>}/>
             </Routes>
           </>
           :
