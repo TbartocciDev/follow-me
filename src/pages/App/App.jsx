@@ -3,9 +3,10 @@ import { Routes, Route } from 'react-router-dom';
 import { getUser } from '../../utilities/users-service';
 import './App.css';
 import AuthPage from '../AuthPage/AuthPage';
-import NewOrderPage from '../NewOrderPage/NewOrderPage';
-import OrderHistoryPage from '../OrderHistoryPage/OrderHistoryPage';
-import Dashboard from '../Dashboard/Dashboard';
+import ExplorePage from '../ExplorePage/ExplorePage';
+import DashboardPage from '../DashboardPage/DashboardPage';
+import MapPage from '../MapPage/MapPage';
+import ProfilePage from '../ProfilePage/ProfilePage';
 import NavBar from '../../components/NavBar/NavBar';
 
 export default function App() {
@@ -15,12 +16,13 @@ export default function App() {
     <main className="App">
       { user ?
           <>
-            <NavBar user={user} setUser={setUser} />
+            <NavBar user={user}/>
             <Routes>
               {/* Route components in here */}
-              <Route path="/orders/new" element={<NewOrderPage />} />
-              {/* <Route path="/orders" element={<OrderHistoryPage />} /> */}
-              <Route path='/dashboard' element={<Dashboard user={user}/>}/>
+              <Route path='/explore' element={<ExplorePage/>}/>
+              <Route path='/dashboard' element={<DashboardPage user={user}/>}/>
+              <Route path='/map' element={<MapPage user={user}/>}/>
+              <Route path='/profile' element={<ProfilePage user={user}/>} setUser={setUser}/>
             </Routes>
           </>
           :
