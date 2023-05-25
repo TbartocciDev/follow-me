@@ -9,6 +9,10 @@ export function getAll() {
     return sendRequest(BASE_URL);
 }
 
-export function getById(id) {
+export function getBlog(id) {
     return sendRequest(`${BASE_URL}/${id}`);
+}
+
+export function getUserBlogs() {
+    return sendRequest(`${BASE_URL}/dashboard`)
 }

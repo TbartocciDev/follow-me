@@ -4,9 +4,10 @@ import { getUser } from '../../utilities/users-service';
 import './App.css';
 import AuthPage from '../AuthPage/AuthPage';
 import ExplorePage from '../ExplorePage/ExplorePage';
+import BlogPage from '../BlogPage/BlogPage';
+import PostPage from '../PostPage/PostPage';
 import DashboardPage from '../DashboardPage/DashboardPage';
 import MapCreationForm from '../../components/MapCreationForm/MapCreationForn';
-import MapPage from '../MapPage/MapPage';
 import ProfilePage from '../ProfilePage/ProfilePage';
 import NavBar from '../../components/NavBar/NavBar';
 import * as mapsAPi from '../../utilities/maps-api';
@@ -18,7 +19,8 @@ export default function App() {
   useEffect(function(){
     async function getMaps() {
       const maps = await mapsAPi.getAll();
-      console.log(maps)
+      console.log('test',maps)
+      console.log('user',user)
       setMenuMaps(maps);
     }
     getMaps();
@@ -32,10 +34,11 @@ export default function App() {
             <Routes>
               {/* Route components in here */}
               <Route path='/explore' element={<ExplorePage maps={menuMaps}/> }/>
-              <Route path='/dashboard' element={<DashboardPage user={user}/>}/>
-              <Route path='/dashboard/trip-create' element={<MapCreationForm user={user}/>}/>
-              <Route path='/map' element={<MapPage user={user}/>}/>
-              <Route path='/profile' element={<ProfilePage user={user}/>} setUser={setUser}/>
+              <Route path='/blog/:id/*' element={<BlogPage/> }/>
+              <Route path='/post/:id/*' element={<PostPage/> }/>
+              <Route path='/dashboard' element={<DashboardPage user={user}/> }/>
+              <Route path='/dashboard/blog-create' element={<MapCreationForm user={user}/> }/>
+              <Route path='/profile' element={<ProfilePage user={user}/>} setUser={setUser} />
             </Routes>
           </>
           :

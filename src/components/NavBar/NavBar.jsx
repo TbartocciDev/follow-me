@@ -8,8 +8,6 @@ export default function NavBar({ user, setUser }) {
       <Link to="/dashboard">Dashboard</Link>
       &nbsp; | &nbsp;
       <Link to="/profile">Profile</Link>
-      &nbsp; | &nbsp;
-      <Link to="/map">Map</Link>
     </nav>
   );
 }

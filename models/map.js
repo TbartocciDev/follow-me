@@ -13,7 +13,7 @@ const mapSchema = new Schema({
   },
   photoURL: {
       type: String,
-      default: "%PUBLIC_URL%/map.png",
+      default: "/map.png",
       required: true
   }
   }, {

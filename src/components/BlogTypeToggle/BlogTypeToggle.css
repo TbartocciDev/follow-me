@@ -1,0 +1,15 @@
+.blog-type-toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+}
+
+.blog-type-button {
+    
+}
+
+#blog-type-selected {
+    background-color: rgb(49, 49, 239);
+    border-style: solid;
+}
