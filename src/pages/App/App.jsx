@@ -19,8 +19,6 @@ export default function App() {
   useEffect(function(){
     async function getMaps() {
       const maps = await mapsAPi.getAll();
-      console.log('test',maps)
-      console.log('user',user)
       setMenuMaps(maps);
     }
     getMaps();
