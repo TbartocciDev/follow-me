@@ -21,7 +21,7 @@ The idea would be the to show the link to friends and family about you trip, nad
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![Markdown](https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white)
 # Some Screenshots
-
+![ScreenShot](public/screenshot.png)
 # Getting Started
 [Click here to try for yourself](https://follow-me-tcb.herokuapp.com/explore)
 
