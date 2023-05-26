@@ -1,0 +1,39 @@
+nav {
+    display: flex;
+    font-size: 4vh;
+    justify-content: space-evenly;
+}
+.nav-link {
+    width: 100%;
+    border-style: solid;
+}
+
+.nav-link:active, .nav-link:visited, .nav-link:link {
+    color: black;
+    text-decoration: none;
+}
+
+.nav-divider {
+    height: 3px;
+    background-color: black;
+}
+
+#selected-nav-link {
+    background-color: gray;
+}
+
+.nav-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4vh;
+    border-style: solid;
+    border-color: black;
+    color: black;
+    border-radius: 0;
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}

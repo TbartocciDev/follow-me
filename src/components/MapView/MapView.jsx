@@ -17,16 +17,16 @@ export default function MapView() {
         return <h2>Loading...</h2>
     }
 
-  return (
-      <div className='mapview-div'>
-            <GoogleMap
-                zoom={10}
-                center={center}
-                mapContainerStyle={mapContainerStyle}
-                id='map'
-            >
-                <MarkerF position={center}/>
-            </GoogleMap>
-      </div>
-  )
+    return (
+        <div className='mapview-div'>
+                <GoogleMap
+                    zoom={10}
+                    center={center}
+                    mapContainerStyle={mapContainerStyle}
+                    id='map'
+                >
+                    <MarkerF position={center}/>
+                </GoogleMap>
+        </div>
+    )
 }

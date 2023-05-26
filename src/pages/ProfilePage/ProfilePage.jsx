@@ -9,8 +9,8 @@ export default function ProfilePage({ user, setUser }) {
 
     return (
         <main>
-            <h1>Profile</h1>
             <h3>{user.name}</h3>
+            <h3>{user.email}</h3>
             <Link to="/" onClick={handleLogOut}>Log Out</Link>
         </main>
     )

@@ -33,18 +33,18 @@ export default class MapCreationForm extends Component {
       <div>
         <div className="form-container">
             <form autoComplete="off" onSubmit={this.handleSubmit}>
-                <input type="text" name="user" value={this.props.user} hidden readOnly/>
-                <label>Title</label>
-                <input type="text" name="title" value={this.state.name} onChange={this.handleChange} required />
-                <label>Bio</label>
-                <input type="text" name="bio" value={this.state.email} onChange={this.handleChange} required />
-                <label>Photo</label>
-                <select onChange={this.handleChange}>
-                    <option name="photoURL" value="1">Photo 1</option>
-                    <option name="photoURL" value="2">Photo 2</option>
-                    <option name="photoURL" value="3">Photo 3</option>
-                </select>
-                <button type="submit">Create Map</button>
+              <input type="text" name="user" value={this.props.user} hidden readOnly/>
+              <label>Title</label>
+              <input type="text" name="title" value={this.state.name} onChange={this.handleChange} required />
+              <label>Bio</label>
+              <input type="text" name="bio" value={this.state.email} onChange={this.handleChange} required />
+              <label>Photo</label>
+              <select onChange={this.handleChange}>
+                <option name="photoURL" value="1">Photo 1</option>
+                <option name="photoURL" value="2">Photo 2</option>
+                <option name="photoURL" value="3">Photo 3</option>
+              </select>
+              <button type="submit">Create Map</button>
             </form>
         </div>
         <p className="error-message">&nbsp;{this.state.error}</p>

@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { Link } from "react-router-dom"
 import * as mapsAPi from '../../utilities/maps-api';
+import "./DashboardPage.css"
 
 export default function DashboardPage() {
     // const [userMaps, setUserMaps] = useState([]);
@@ -14,8 +15,7 @@ export default function DashboardPage() {
     // }, []);
 
     return (
-        <main>
-            <h1>Dashboard</h1>
+        <main className='dashboard-page'>
             <Link to="/dashboard/blog-create">
                 <button>Create a map</button>
             </Link>
