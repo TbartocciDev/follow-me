@@ -31,4 +31,6 @@ Generally this project is not in the state I wish it were in, but at the time of
 - Letting users customize how their blog would be viewed/the layout of the elements. Similiar to a wordpress/squarespace
 - Being able to click a marked location on the map to view the post
 - Allowing the user to search for a location using the places google api
+- Implemented a custom map and icons
+- Show ways of transportation between points
 - Having full CRUD
